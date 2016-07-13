@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Cockroach, Atomic Bomb, Boot</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Rock, Paper, Scissors</a>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<button type="button" class="btn btn-default" onclick="resetGame()">Reset Game</button>
+				</div>
+			</div>
+			<div class="row">
+				
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+				<h3>Computer</h3>
+				<h4 id="computer-result"></h4>
+					<img src="images/comp-init-image.jpg" class="img-responsive" id="comp-choice-image" alt="Image">
+				</div>
+				
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+				<h3>You</h3>
+				<h4 id="user-result"></h4>
+					<img src="images/user-init-image.jpg" class="img-responsive" id="user-choice-image" alt="Image">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-4 col-xs-offset-6">
+					<button type="button" value="boot" class="btn btn-default" onclick="rpsShoot(this.value)">Boot</button>
+					<button type="button" value="cockroach" class="btn btn-default" onclick="rpsShoot(this.value)">Cockroach</button>
+					<button type="button" value="atomic-bomb" class="btn btn-default" onclick="rpsShoot(this.value)">Atomic Bomb</button>
+				</div>
+			</div>
+			<div class="row ">
+				<div class="col-xs-4 col-xs-offset-6">
+					<h3>Your Scoreboard</h3>
+					<p>Wins: <span id="score-wins">0</span></p>
+					<p">Loses: <span id="score-loses">0</span></p>
+					<p>Ties: <span id="score-ties">0</span></p>
+				</div>
+			</div>
+		</div>
+
+		<script src="rps.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</body>
+</html>

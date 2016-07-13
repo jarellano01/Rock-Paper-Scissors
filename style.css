@@ -1,0 +1,9 @@
+.score-board {
+	background-color: black;
+	color: white;
+	height: 50px;
+}
+
+#comp-choice-image, #user-choice-image {
+	height: 230px;
+}
