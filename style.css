@@ -6,4 +6,8 @@
 
 #comp-choice-image, #user-choice-image {
 	height: 230px;
+	margin: auto;
+}
+.col-xs-12, .col-xs-6{
+	text-align: center;
 }
